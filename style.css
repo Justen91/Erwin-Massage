@@ -1,0 +1,63 @@
+body {
+	width:100%;
+	margin:0 0 0 0;
+}
+
+#header {
+	width:100%;
+	height: 150px;
+	background-color: grey;
+}
+
+
+#containerLanguageButtons {
+	position: relative;
+	left: 90%;
+	top:10px;
+	height: 30px;
+	width: 10%;
+}
+
+.languageFlags {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+	margin-right: 5px;
+}
+
+.headerButtons {
+	position: relative;
+	top:30px;
+	left: 6%;
+	margin-right:7%;
+	width:15%;
+	height: 3em;
+	border-radius: 20em;
+	background-color: yellow;
+	display: inline-block;
+	cursor: pointer;
+
+}
+
+.textButton {
+	line-height: 3em;
+	text-align: center;
+	font-size: 1.1em;
+	font-weight: bold;
+	  	-webkit-touch-callout: none; /* iOS Safari */
+    	-webkit-user-select: none; /* Safari */
+     	-khtml-user-select: none; /* Konqueror HTML */
+       	-moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+        user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+
+
+#frameContent {
+	border: none;
+	width: 100%;
+	margin:0 0 0 0;
+}

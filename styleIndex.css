@@ -5,15 +5,18 @@ body {
 }
 
 #header {
+	position: absolute;
 	width:100%;
-	height: 150px;
+	height: 100px;
 	background-image: url(images/header-background.jpeg);
+	opacity: 0.85;
 	background-size: cover;
 }
 
 #headerimage {
 	display: absolute;
 	width: 100%;
+	opacity: 0.9;
 }
 
 
@@ -23,7 +26,6 @@ body {
 	left: 90%;
 	top:10px;
 	height: 30px;
-	width: 10%;
 }
 
 .languageFlags {
@@ -38,33 +40,24 @@ body {
 #containerHeaderButtons {
 	position: absolute;
 	top:60px;
-	left: 6%;
+	left: 10%;
 	width: 88%;
 }
 
 .headerButtons {
 	position: relative;
 	margin-right:7%;
-	width:15%;
-	height: 2em;
-	border-radius: 20em;
-	background-color: #8698b3b3;
 	display: inline-block;
 	cursor: pointer;
-	border: solid #8698b35c 1px;
 	overflow: hidden;
 }
 
 
-.headerButtons:hover {
-	background-color: #8698b3e0;
-}
-
 .textButton {
-	line-height: 2em;
 	text-align: center;
-	font-size: 100%;
+	font-size: 1.3em;
 	font-weight: bold;
+	color: #BF7171;
 	  	-webkit-touch-callout: none; /* iOS Safari */
     	-webkit-user-select: none; /* Safari */
      	-khtml-user-select: none; /* Konqueror HTML */
@@ -72,6 +65,10 @@ body {
         -ms-user-select: none; /* Internet Explorer/Edge */
         user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome and Opera */
+}
+
+.textButton:hover{
+	color: #964d4d;
 }
 
 

@@ -19,9 +19,16 @@
 
 
 <script>
-  function resizeIframe(obj) {
-    obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+window.addEventListener('message', function(e) {
+  var $iframe = jQuery("#frameContent");
+  var eventName = e.data[0];
+  var data = e.data[1];
+  switch(eventName) {
+    case 'setHeight':
+      $iframe.height(data);
+      break;
   }
+}, false);
 </script>
 
 
@@ -86,7 +93,7 @@
 fitty('.textButton');
 </script>
 
-<iframe id="frameContent" src="home.html" frameborder="0" scrolling="no" onload="resizeIframe(this)"></iframe> 
+<iframe id="frameContent" src="home.html" frameborder="0" scrolling="no" ></iframe> 
 </div>
 
 

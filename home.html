@@ -5,10 +5,17 @@
 
 	<link rel="stylesheet" type="text/css" href="styleHome.css">
 
+<script type="text/javascript">
+	function resize() {
+  var height = document.getElementsByTagName("html")[0].scrollHeight;
+  window.parent.postMessage(["setHeight", height], "*"); 
+}
+</script>
+
 </head>
 
 
-<body>
+<body onLoad="resize();">
 	<div id = "headerImageContainer">
 		<!--<img id = "headerImage" src="images/wellness-garden-merano-hotel.jpg"> -->
 	</div>
@@ -38,7 +45,7 @@
 			</div>
 		</div>
 
-
+		
 </body>
 
 

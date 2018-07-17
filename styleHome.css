@@ -15,41 +15,49 @@ body {
 	background-size: cover;
 }
 
-#containerHomeText {
-	position: absolute;
-	top: 40%;
-	width: 100%;
-	height: 300px;
-	background-color: #FCFCFC;
+#containerHomeText {    
+	position: relative;
+    top: 40%;
+    width: 100%;
+    background-color: #FCFCFC;
+    padding-bottom: 50px;
 }
 
 #boxHomeText{
 	width: 40%;
 	position: relative;
 	top:10%;
-	right:-50%;
+	left: 30%;
 }
 
 h3, p {
 	text-align: center;
 }
 
+#containerHomePreviewBox{
+	width: 100%;
+	background-color: white;
+	position: relative;
+	top:-20px;
+}
 
 #containerHomePreview {
 	position: relative;
 	width: 80%;
-	top:160px;
+	top:40px;
 	left: 10%;
 }
 
 .previews {
 	display: inline-block;
 	width: 30%;
+	margin-right: 3%;
 }
 
 .imagePreview {
 	width: 80%;
 	height: 80%;
+	margin-left: 10%;
 }
 
 .textPreview {

@@ -8,9 +8,7 @@ body {
 	position: absolute;
 	width:100%;
 	height: 100px;
-	background-image: url(images/header-background.jpeg);
-	opacity: 0.85;
-	background-size: cover;
+	min-width: 395px;
 }
 
 #headerimage {
@@ -23,42 +21,80 @@ body {
 #containerLanguageButtons {
 	z-index: 1;
 	position: absolute;
-	left: 90%;
+	margin-left: auto;
+	margin-right: 0px;
 	top:10px;
 	height: 30px;
+	width: 100%;
+	min-width: 395px;
 }
 
+#innerContainerLanguageButtons {
+	position: absolute;
+	right: 0px;
+	width: 10%;
+	height: 30px;
+	min-width: 80px;
+}
+
+
 .languageFlags {
+	position: absolute;
 	display: inline-block;
-	width: 40px;
-	height: 40px;
+	width: 28%;
+	margin-left:2%;
 	cursor: pointer;
-	margin-right: 5px;
+}
+
+#englishFlag {
+	left:0%;
+}
+
+
+#dutchFlag {
+	left:33%;
+}
+
+
+#papiamentoFlag{
+	left:66%;
 }
 
 
 #containerHeaderButtons {
 	position: absolute;
-	top:60px;
-	left: 10%;
-	width: 88%;
+	bottom:0;
+	width: 95%;
+	z-index: 1;
+	min-width: 395px;
+	left:5%;
+}
+
+.innerContainerHeaderButtons {
+	display: inline-block;
+	width: 10%;
+	min-width: 86px;
+	margin-right: 12%;
 }
 
 .headerButtons {
 	position: relative;
-	margin-right:7%;
+	width:10%;
+	min-width:80px;
 	display: inline-block;
 	cursor: pointer;
 	overflow: hidden;
+	z-index: 1;
+	fill: #BF7171;
 }
 
 
 
 .textButton {
+	z-index: 1;
 	text-align: center;
 	font-size: 1.3em;
 	font-weight: bold;
-	color: #BF7171;
 	  	-webkit-touch-callout: none; /* iOS Safari */
     	-webkit-user-select: none; /* Safari */
      	-khtml-user-select: none; /* Konqueror HTML */
@@ -69,10 +105,21 @@ body {
 }
 
 .textButton:hover{
-	color: #964d4d;
+	fill: #964d4d;
 }
 
 
+
+
+#headerBackgroundImage {
+	width: 100%;
+	background-image: url(images/header-background.jpeg);
+	opacity: 0.85;
+	background-size: cover;
+	height: 100px;
+	position: absolute;
+	z-index: 0.3;
+}
 
 #frameContent {
 	border: none;

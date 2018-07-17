@@ -9,17 +9,10 @@ function resizeIframe(iframeID)
 
 
 function changeLanguageEnglish() {
-	var homeButton =  document.getElementById('homeButton').getElementsByClassName('textButton')[0];
-	homeButton.innerHTML = "Home"
-
-	var homeButton =  document.getElementById('meButton').getElementsByClassName('textButton')[0];
-	homeButton.innerHTML = "About Me"
-
-	var homeButton =  document.getElementById('priceButton').getElementsByClassName('textButton')[0];
-	homeButton.innerHTML = "Prices"
-
-	var homeButton =  document.getElementById('contactButton').getElementsByClassName('textButton')[0];
-	homeButton.innerHTML = "Contact"
+	$("#homeButton").text("Home");
+	$("#meButton").text("About Me");
+	$("#priceButton").text("Prices");
+	$("#contactButton").text("Contact");
 }
 
 
@@ -30,40 +23,21 @@ function changeLanguageEnglish() {
 
 
 function changeLanguageDutch() {
-	var homeButton =  document.getElementById('homeButton').getElementsByClassName('textButton')[0];
-	homeButton.innerHTML = "Start"
-
-	var homeButton =  document.getElementById('meButton').getElementsByClassName('textButton')[0];
-	homeButton.innerHTML = "Over mij"
-
-	var homeButton =  document.getElementById('priceButton').getElementsByClassName('textButton')[0];
-	homeButton.innerHTML = "Prijzen"
-
-	var homeButton =  document.getElementById('contactButton').getElementsByClassName('textButton')[0];
-	homeButton.innerHTML = "Contact"
+	$("#homeButton").text("Start");
+	$("#meButton").text("Over mij");
+	$("#priceButton").text("Prijzen");
+	$("#contactButton").text("Contact");
 }
 
 
 
 
 
-
-
-
-
-
 function changeLanguagePapiamento() {
-	var homeButton =  document.getElementById('homeButton').getElementsByClassName('textButton')[0];
-	homeButton.innerHTML = "Kas"
-
-	var homeButton =  document.getElementById('meButton').getElementsByClassName('textButton')[0];
-	homeButton.innerHTML = "Di mi"
-
-	var homeButton =  document.getElementById('priceButton').getElementsByClassName('textButton')[0];
-	homeButton.innerHTML = "Preis"
-
-	var homeButton =  document.getElementById('contactButton').getElementsByClassName('textButton')[0];
-	homeButton.innerHTML = "Kontakto"
+	$("#homeButton").text("Kas");
+	$("#meButton").text("Di mi");
+	$("#priceButton").text("Preis");
+	$("#contactButton").text("Kontakto");
 }
 
 
@@ -89,3 +63,24 @@ function contactClick() {
 	var frame = document.getElementById('frameContent')
 	frame.setAttribute("src","contact.html");
 }
+
+
+
+
+
+
+
+
+/* CHANGING CONTENT LANGUAGE
+var homeButton =  document.getElementById('homeButton').getElementsByClassName('textButton')[0];
+	homeButton.innerText = "Start"
+
+	var homeButton =  document.getElementById('meButton').getElementsByClassName('textButton')[0];
+	homeButton.innerText = "Over mij"
+
+	var homeButton =  document.getElementById('priceButton').getElementsByClassName('textButton')[0];
+	homeButton.innerText = "Prijzen"
+
+	var homeButton =  document.getElementById('contactButton').getElementsByClassName('textButton')[0];
+	homeButton.innerText = "Contact"
+	*/

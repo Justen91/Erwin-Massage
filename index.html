@@ -18,6 +18,12 @@
 		  	<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/fitty.min.js"></script>
 
 
+<script>
+  function resizeIframe(obj) {
+    obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+  }
+</script>
+
 
 </head>
 
@@ -80,7 +86,7 @@
 fitty('.textButton');
 </script>
 
-<iframe id="frameContent" src="home.html" frameborder="0" scrolling="no"></iframe> 
+<iframe id="frameContent" src="home.html" frameborder="0" scrolling="no" onload="resizeIframe(this)"></iframe> 
 </div>
 
 

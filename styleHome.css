@@ -26,7 +26,7 @@ body {
 	width: 40vw;
 	position: relative;
 	top:10%;
-	left: 30%;
+	left: 45vw;
 }
 
 h3, p {
@@ -36,7 +36,6 @@ h3, p {
 
 #containerHomePreviewBox{
 	width: 100vw;
-	height: 20vh;
 	background-color: white;
 	position: relative;
 	top:-20vh;

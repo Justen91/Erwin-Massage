@@ -38,9 +38,9 @@ body {
 #innerContainerLanguageButtons {
 	position: absolute;
 	right: 0px;
-	width: 10vw;
+	width: 8vw;
 	height: 5vh;
-	min-width: 80px;
+	min-width: 60px;
 }
 
 
@@ -89,7 +89,6 @@ body {
 	width:9vw;
 	min-width:80px;
 	display: inline-block;
-	border: solid black;
 	cursor: pointer;
 	overflow: hidden;
 	z-index: 1;
@@ -99,8 +98,8 @@ body {
 .textButton {
 	z-index: 1;
 	text-align: center;
-	font-size: 2.3vw;
-	color:#BF7171;
+	font-size: 1.5vw;
+	color:#3c3e32;
 }
 
 /*

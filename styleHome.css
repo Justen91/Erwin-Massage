@@ -14,6 +14,7 @@ body {
 	background-size: cover;
 }
 
+
 #containerHomeText {    
 	position: relative;
     top: -20vh;
@@ -22,11 +23,24 @@ body {
     padding: 50px 0 50px 0;
 }
 
+
+#boxHomeImage {
+	position: relative;
+	display: inline-block;
+	width: 20vw;
+	left: 15vw;	
+}
+
+#boxHomeImage > img {
+	width: 20vw;
+}
+
 #boxHomeText{
 	width: 40vw;
+	display: inline-block;
 	position: relative;
 	top:10%;
-	left: 45vw;
+	left: 30vw;
 }
  
 h3, p {
@@ -75,9 +89,4 @@ h3, p {
 	text-align: center;
 }
 
-#test {
-	background-color: yellow;
-	height: 400px;
-	width: 100%;
-}
 

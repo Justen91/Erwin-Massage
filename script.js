@@ -1,11 +1,3 @@
-function resizeIframe(iframeID) 
-{       
-    var iframe = window.parent.document.getElementById('frameContent');
-    var container = document.getElementById('content');
-    iframe.style.height = container.offsetHeight + 'px';            
-} 
-
-
 
 
 function changeLanguageEnglish() {

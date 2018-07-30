@@ -12,10 +12,14 @@
 }
 </script>
 
+
+
+
 </head>
 
 
 <body onLoad="resize();">
+	<div id="page-container">
 	<div id = "headerImageContainer">
 		<!--<img id = "headerImage" src="images/wellness-garden-merano-hotel.jpg"> -->
 	</div>
@@ -30,22 +34,39 @@
 	<div id="containerHomePreviewBox">
 		<div id="containerHomePreview">
 			<div class = "previews" id="preview1">
-				<img class="imagePreview" id="imagePreview1" src="images/c700x420 (1).jpg">
+				<div class = "frameImage">
+					<img class="imagePreview" id="imagePreview1" src="images/c700x420 (1).jpg">
+				</div>
 				<div class="textPreview" id="textPreview1">Relaxing massage</div>
 			</div>
 
 			<div class = "previews" id="preview2">
-				<img class="imagePreview" id="imagePreview2" src="images/woman-getting-a-foot-massage_1286-34.jpg">
+				<div class = "frameImage">
+					<img class="imagePreview" id="imagePreview2" src="images/woman-getting-a-foot-massage_1286-34.jpg">
+				</div>
 				<div class="textPreview" id="textPreview2">Foot massage</div>
 			</div>
 
 			<div class = "previews" id="preview3">
-				<img class="imagePreview" id="imagePreview3" src="images/download.jpeg">
+				<div class = "frameImage">
+					<img class="imagePreview" id="imagePreview3" src="images/download.jpeg">
+				</div>
 				<div class="textPreview" id="textPreview3">Deep tissue massage</div>
 			</div>
 		</div>
 
+		</div>
 		
+		<div id="test">
+
+
+</div>
+<script type="text/javascript">
+parent.AdjustIframeHeight(document.getElementById("page-container").scrollHeight);
+</script>
+
+
+
 </body>
 
 

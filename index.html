@@ -15,7 +15,7 @@
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		  	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 		  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-		  	<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/fitty.min.js"></script>
+
 
 
 <script>
@@ -32,6 +32,20 @@ window.addEventListener('message', function(e) {
 </script>
 
 
+
+
+
+<script type="text/javascript">
+
+if (screen.width <= 700) {
+document.location = "prices.html";
+}
+
+</script>
+
+
+
+
 </head>
 
 
@@ -39,7 +53,7 @@ window.addEventListener('message', function(e) {
 <body>
 	<div id="header">
 		<!--<img id=headerimage" src="images/header-background.jpeg"> -->
-
+		<div id="headerBackgroundImage"></div>
 
 		<div id="containerLanguageButtons">
 			<div id="innerContainerLanguageButtons">
@@ -50,55 +64,62 @@ window.addEventListener('message', function(e) {
 		</div>
 
 
+
+
+
 		<div id="containerHeaderButtons">
-			<div class="innerContainerHeaderButtons">
+
 						<div class="headerButtons" onclick="homeClick()"> 	
-							 	<svg  class="textButton" viewBox="0 0 85 20">
-			    					<text x="0" y="15"  id="homeButton">Home</text>
-			  					<svg>
-					</div>
+							<span class="textButton">Home</span> 	
+
 			</div>
 
-			<div class="innerContainerHeaderButtons">
+
+
+
 					<div class="headerButtons" 	 onclick="aboutUsClick()"> 	
-						 	<svg  class="textButton"  viewBox="0 0 85 20">
-		    					<text x="0" y="15" id="meButton">About Me</text>
-		  					<svg> 	
+						 	<span class="textButton">About Us</span> 	
 					</div>
-			</div>
 
-			<div class="innerContainerHeaderButtons">
+
+
 					<div class="headerButtons" onclick="pricesClick()"> 	
-						 	<svg  class="textButton"  viewBox="0 0 85 20">
-		    					<text x="0" y="15" id="priceButton"	 >Prices</text>
-		  					<svg> 
+						 	<span class="textButton">Prices</span> 
 					 </div>
-			</div>
 
-			<div class="innerContainerHeaderButtons">
+
+
 					<div class="headerButtons"onclick="contactClick()"> 	
-						 	<svg   class="textButton" viewBox="0 0 85 20">
-		    					<text x="0" y="15" id="contactButton">Contact</text>
-		  					<svg>
+						 	<span class="textButton">Contact</span>
 					 </div>
-			</div>	
+
 
 
 		</div>
 
-		<div id="headerBackgroundImage"></div>
 	</div>
 
+
+
+<iframe id="frameContent" src="home.html" frameborder="0" scrolling="no" style="margin:0; width:100%; height:150px; border:none; overflow:hidden;" scrolling="no" onload="AdjustIframeHeightOnLoad()"></iframe> 
+
 <script type="text/javascript">
-fitty('.textButton');
+function AdjustIframeHeightOnLoad() { document.getElementById("frameContent").style.height = document.getElementById("frameContent").contentWindow.document.body.scrollHeight + "px"; }
+function AdjustIframeHeight(i) { document.getElementById("frameContent").style.height = parseInt(i) + "px"; }
 </script>
 
-<iframe id="frameContent" src="home.html" frameborder="0" scrolling="no" ></iframe> 
+
+
 </div>
 
 
  
 </body>
 
+<!--
+	<svg  class="textButton" viewBox="0 0 85 20">
+			    					<text x="0" y="15"  id="homeButton">Home</text>
+			  					<svg>
+			  					-->
 
 </html>

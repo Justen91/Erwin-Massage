@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Erwin van der Ree - Voor een kapot dak of een verstopte WC </title>
+	<link 	rel= "icon" 
+			type="image/png" 
+			href="images/favicon.ico">
+
+	<link rel="stylesheet" type="text/css" href="styleIndex.css">
+
+	<script type="text/javascript" src="script.js"></script>
+
+
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		  	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+
+<script>
+window.addEventListener('message', function(e) {
+  var $iframe = jQuery("#frameContent");
+  var eventName = e.data[0];
+  var data = e.data[1];
+  switch(eventName) {
+    case 'setHeight':
+      $iframe.height(data);
+      break;
+  }
+}, false);
+</script>
+
+
+
+
+
+<script type="text/javascript">
+
+if (screen.width <= 700) {
+document.location = "prices.html";
+}
+
+</script>
+
+
+
+
+</head>
+
+
+
+<body>
+	<div id="header">
+		<!--<img id=headerimage" src="images/header-background.jpeg"> -->
+		<div id="headerBackgroundImage"></div>
+
+		<div id="containerLanguageButtons">
+			<div id="innerContainerLanguageButtons">
+				<img src="images/united-kingdom.png" id="englishFlag" class="languageFlags" onclick="changeLanguageEnglish()">
+				<img src="images/netherlands.png" id="dutchFlag" class="languageFlags" onclick="changeLanguageDutch()">
+				<img src="images/bonaire.png" id="papiamentoFlag" class="languageFlags" onclick="changeLanguagePapiamento()">
+			</div>
+		</div>
+
+
+
+
+
+		<div id="containerHeaderButtons">
+
+						<div class="headerButtons" onclick="homeClick()"> 	
+							<span class="textButton">Home</span> 	
+
+			</div>
+
+
+
+
+					<div class="headerButtons" 	 onclick="aboutUsClick()"> 	
+						 	<span class="textButton">About Us</span> 	
+					</div>
+
+
+
+					<div class="headerButtons" onclick="pricesClick()"> 	
+						 	<span class="textButton">Prices</span> 
+					 </div>
+
+
+
+					<div class="headerButtons"onclick="contactClick()"> 	
+						 	<span class="textButton">Contact</span>
+					 </div>
+
+
+
+		</div>
+
+	</div>
+
+ 
+
+<iframe id="frameContent" src="home.html" frameborder="0" scrolling="no" style="margin:0; width:100%; height:150px; border:none; overflow:hidden;" scrolling="no" onload="AdjustIframeHeightOnLoad()"></iframe> 
+
+<script type="text/javascript">
+function AdjustIframeHeightOnLoad() { document.getElementById("frameContent").style.height = document.getElementById("frameContent").contentWindow.document.body.scrollHeight + "px"; }
+function AdjustIframeHeight(i) { document.getElementById("frameContent").style.height = parseInt(i) + "px"; }
+</script>
+
+
+
+</div>
+
+
+ 
+</body>
+
+<!--
+	<svg  class="textButton" viewBox="0 0 85 20">
+			    					<text x="0" y="15"  id="homeButton">Home</text>
+			  					<svg>
+			  					-->
+
+</html>

@@ -1,78 +1,54 @@
-
-
-function changeLanguageEnglish() {
-	$("#homeButton").text("Home");
-	$("#meButton").text("About Me");
-	$("#priceButton").text("Prices");
-	$("#contactButton").text("Contact");
+// Collapse Menu Items
+function collapseMenu(){
+	if(document.getElementById( 'menu-items').style.display == "none"){
+	$( '#menu-items' ).slideDown()
+}
+else{
+	$( '#menu-items' ).slideUp()	
+}
 }
 
 
 
+// Collapse Specification Items For Massage
+function collapseMenuMassage(){
+	var specifyMenu = document.getElementById( 'menu-massage-specify' );
+	
+	if(specifyMenu.style.display == "none"){
+	$( '#menu-massage-specify' ).toggle();
+	document.getElementById ( 'box-sport-massage' ).style.display = "none";
+	document.getElementById ( 'box-relaxing-massage' ).style.display = "none";
+	$( '#box-sport-massage' ).fadeToggle(1000);
+	$( '#box-relaxing-massage' ).delay(500).fadeToggle(1000);
+	document.getElementById('menu-massage').style.borderBottom = 'none'
+}
+else{
+	$( '#menu-massage-specify' ).toggle();
+	$( '#box-sport-massage' ).toggle();
+	$( '#box-relaxing-massage' ).toggle();
+	document.getElementById('menu-massage').style.borderBottom = 'solid 0.1vh white'
+}
+};
 
 
 
-
-
-function changeLanguageDutch() {
-	$("#homeButton").text("Start");
-	$("#meButton").text("Over mij");
-	$("#priceButton").text("Prijzen");
-	$("#contactButton").text("Contact");
+function menuHome() {
+	 window.location = 'index.html'
 }
 
 
-
-
-
-function changeLanguagePapiamento() {
-	$("#homeButton").text("Kas");
-	$("#meButton").text("Di mi");
-	$("#priceButton").text("Preis");
-	$("#contactButton").text("Kontakto");
+function menuSportMassage() {
+	window.location = 'sportmassage.html'
 }
 
-
- 
-
-
-function homeClick() {
-	var frame = document.getElementById('frameContent')
-	frame.setAttribute("src","home.html");
+function menuRelaxingMassage() {
+	window.location = 'relaxingmassage.html'
 }
 
-function aboutUsClick() {
-	var frame = document.getElementById('frameContent')
-	frame.setAttribute("src","aboutus.html");
+function menuBodyfit() {
+	window.location = 'bodyfit.html'
 }
 
-function pricesClick() {
-	var frame = document.getElementById('frameContent')
-	frame.setAttribute("src","prices.html");
+function menuContact() {
+	window.location = 'contact.html'
 }
-
-function contactClick() {
-	var frame = document.getElementById('frameContent')
-	frame.setAttribute("src","contact.html");
-}
-
-
-
-
-
-
-
-
-/* CHANGING CONTENT LANGUAGE
-var homeButton =  document.getElementById('homeButton').getElementsByClassName('textButton')[0];
-	homeButton.innerText = "Start"
-
-	var homeButton =  document.getElementById('meButton').getElementsByClassName('textButton')[0];
-	homeButton.innerText = "Over mij"
-
-	var homeButton =  document.getElementById('priceButton').getElementsByClassName('textButton')[0];
-	homeButton.innerText = "Prijzen"
-
-	var homeButton =  document.getElementById('contactButton').getElementsByClassName('textButton')[0];
-	homeButton.innerText = "Contact"
-	*/

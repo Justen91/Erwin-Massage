@@ -1,0 +1,165 @@
+body{
+	width: 100vw;
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+    height: 100vh;
+}
+
+#header{
+	width:100vw;
+	background-image: linear-gradient(#b7b7b7 3%, #e9e9e9 90%);
+}
+
+
+#box-header-logo{
+    max-height: 10vh;
+    overflow: hidden;
+    display: inline-block;
+}
+
+#header-logo{
+	width: 20vw;
+	margin: 2vh 0 2vh 5vw;
+}
+
+
+
+
+/*Menu Button*/
+#menu-outer{         
+    width: 18vw;
+    height: 5.5vh;
+    background-color: #174577;
+    position: relative;
+    margin-left: 50vw;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    display: inline-block;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+#menu-text {    
+    height: 5.5vh;
+    text-align: center;
+    line-height: 5.5vh;
+    vertical-align: middle;
+    width: 70%;
+    font-size: 4.5vw;
+    color: #feb823;
+    display: inline-block;
+    float: left;
+}
+
+#menu-bars{    
+    height: 1.9vh;
+    margin-top: 1.8vh;
+    display: inline-block;
+    width: 25%;
+    float: left;
+}
+
+.menu-bar{
+    margin-bottom: 0.5vh;
+    width: 100%;
+    border-bottom: solid #feb823 0.3vh;
+}
+
+
+
+
+
+/* Menu Items */
+#menu-items{
+    padding: 3vh 0 8vh 0;
+    background-image: linear-gradient(#e9e9e9 0%, #e9e9e9 88%, #ffffff00 100%);
+    display: none;
+    position: absolute;
+    z-index: 1;
+  }
+
+
+.menu-item{    
+	color: #294b79;;
+    font-size: 5.5vw;
+    height: 7vh;
+    line-height: 7vh;
+    vertical-align: middle;
+    border-bottom: solid 0.1vh white;
+    margin-left: 15vw;
+    width: 60vw;    
+    display: inline-table;
+    cursor: pointer;
+    padding: 0 0 0 2vw;
+}
+
+.menu-item:hover{
+	background-color: #dcd9d9;
+    border-radius: 10px;
+}
+
+
+
+#menu-massage-specify{
+	width: 60vw;
+    display: none;
+    margin-left: 15vw;
+    border-bottom: solid 0.1vh white;
+}
+
+#box-sport-massage{
+    display: none;
+    cursor: pointer;
+    padding: 0 0 0 2vw;
+}
+
+#box-relaxing-massage{
+    display: none;
+    cursor: pointer;
+    padding: 0 0 0 2vw;
+}
+
+
+
+.circle-massage-specify{    
+	width: 1.5vw;
+    height: 1.5vw;
+    border-radius: 50%;
+    background-color: #294b79;;
+    display: inline-block;
+    margin: 0 2.4vw 0 0vw;
+}
+
+.item-massage-specify{
+    color: #294b79;;
+    display: inline-block;
+    margin: 1vh 0;
+	font-size: 4.5vw;
+}
+
+
+.new-line-massage-specify{
+	display: block;
+}
+
+
+#box-sport-massage:hover{
+    background-color:#dcd9d9;
+    border-radius: 10px;
+}
+
+#box-relaxing-massage:hover{
+    background-color:#dcd9d9;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+#footer{
+    width: 100vw;
+    height: 5vh;
+}

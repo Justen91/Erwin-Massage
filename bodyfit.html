@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Massage and Bodyfit Bonaire</title>
+
+
+	<link 	rel= "icon" 
+			type="image/png" 
+			href="favicon-logo.png">
+
+	<link rel="stylesheet" type="text/css" href="menu-small.css">
+	<link rel="stylesheet" type="text/css" href="bodyfit-small.css">
+
+	<script type="text/javascript" src="script.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+</head>
+
+
+
+
+<body>
+	
+<!-- Header of Page -->
+<div id="header">
+	<div id="box-header-logo">
+		<img id="header-logo" src="images/MASSAGE  BODYFIT/400dpiLogo.png">
+	</div>
+
+	<div href="#" id="menu-outer" onclick="collapseMenu()">
+		<div id="menu-text">Menu</div>
+		<div id="menu-bars">
+			<div class="menu-bar"></div>
+			<div class="menu-bar"></div>
+			<div class="menu-bar"></div>
+		</div>
+	</div>
+</div>
+
+<!-- Dropdown Menu Items -->
+<div id="menu-items" style="display: none;">
+	<div class="menu-item" id="menu-home" onclick="menuHome()">Home</div>
+	<div class="menu-item" id="menu-massage" onclick="collapseMenuMassage()">Massage</div>
+
+<!-- Massage Specification -->
+	<div id="menu-massage-specify" style="display: none;">
+			<div id = "box-sport-massage">
+				<div class="circle-massage-specify"></div>
+				<div class="item-massage-specify" id="sport-massage" onclick="menuSportMassage()">Sport Massage</div>
+			</div>
+
+			<div class="new-line-massage-specify"></div>
+
+			<div id = "box-relaxing-massage">
+				<div class="circle-massage-specify"></div>
+				<div class="item-massage-specify" id="relaxing-massage" onclick="menuRelaxingMassage()">Relaxing Massage</div>
+			</div>
+	</div>
+	
+	<div class="menu-item" id="menu-bodyfit" onclick="menuBodyfit()">Bodyfit</div>
+	<div class="menu-item" id="menu-contact" onclick="menuContact()">Contact</div>
+</div>
+
+
+
+
+
+
+<!-- Page Content -->
+
+
+<!-- Welcome Image -->
+<div id="box-bodyfit-image" class="font">
+	<img id = "bodyfit-image" src="images/erwin-fotos/run  zoutmeer.jpg">
+</div>
+<div id='fadeout-bodyfit-image'></div>
+
+
+
+<!-- Text -->
+<div class="box-bodyfit-text font">
+	<div class="header-bodyfit-text">TAPING & BANDAGEREN</div>
+	<div class="text-bodyfit-text">Door middel van een tape of bandage wordt een gewricht ondersteund, waardoor het duidelijk stabieler en minder pijnlijk is tijdens belasting. Dit kan zowel tijdens een blessureperiode, maar ook ter preventie van een letsel<br><br>
+Door de versteviging van een bandage of tape kan deze fungeren als een kunstmatige pees of band en kan deze versterking bij een spierverrekking, peesontsteking of instabiele gewrichten. De tape of bandage kan er voor zorgen dat een bewegingsuitslag van een gewricht verminderd wordt waardoor u niet  in het pijnlijk gebied kan komen</div>
+</div>
+
+<div class="text-line"></div>
+
+<div class="box-bodyfit-text font">
+	<div class="header-bodyfit-text">KINESIO TAPING</div>
+	<div class="text-bodyfit-text">Deze vorm van medicale taping is een methode om de spieren te tapen. De gekleurde tape wordt op de huid aangebracht. De rekbaarheid van de gebruikte tap is vergelijkbaar met de rekbaarheid van de huid. Zo worden de spieren niet vastgezet, maar kunnen vrij bewegen zonder dat zij meer kunnen uitrekken dan gewenst is<br><br>
+Kinesio Taping optimaliseert en ondersteunt de spieren, waarbij de volledige beweeglijkheid behouden blijft. Bovendien helpt het bij spiervermoeidheid, ontstekingen, zwellingen en pijn. Medical taping kan ook preventief gebruikt worden om blessures te voorkomen</div>
+</div>
+
+<div class="text-line"></div>
+
+<div class="box-bodyfit-text font">
+	<div class="header-bodyfit-text">BLESSURE PREVENTIE</div>
+	<div class="text-bodyfit-text">Als je sport dan ben je gezond bezig maar wanneer je wilt blijven genieten van je sport, moet je eigenlijk weten hoe je blessures voorkomt. Een blessure ontstaat door bijvoorbeeld een verkeerde voorbereiding, een slechte houding, overbelasting of extreme factoren<br><br>Blessurepreventie is het totaal aan maatregelen, die je zou moeten nemen om schade aan de gezondheid ten gevolge van sportbeoefening te voorkomen. Bij blessurepreventie is het belangrijk de persoonsgebonden factoren, zoals leeftijd en conditie optimaal af te stemmen op de omgevingsgebonden factoren; denk hierbij aan de sportaccommodatie, maar ook de sportmaterialen of het schoeisel<br><br>
+Middels het afnemen van een anamnese, een inspectie van uw lichaamshouding, een algeheel functieonderzoek en palpatie krijgt u een goede indruk van de algehele lichamelijke conditie op dat moment. Naar aanleiding van de resultaten van dit onderzoek kan een advies worden afgegeven m.b.t. houding, training, oefening en aanpassing van omgeving gebonden factoren
+</div>
+</div>
+
+
+<div class="text-line"></div>
+
+<div class="box-bodyfit-text font">
+	<div class="header-bodyfit-text">PERSONAL FITNESS TRAINER</div>
+	<div class="text-bodyfit-text">Best of both worlds; sporten en vakantie<br><br>
+Wilt u gebruik maken van een personal trainer terwijl u op Bonaire geniet van een tropische vakantie? Een volledige workout van 60 minuten in de comfort van uw eigen vakantie verblijf, geheel aangepast aan uw conditie, lichamelijke gesteldheid en wensen<br><br>
+Speciaal voor de enthousiaste sporter, die ook tijdens zijn vakantie door wil gaan met actief bewegen, maar zeker ook voor de starter die deze vakantie eindelijk  de tijd heeft gevonden om een start te maken met zijn of haar body fitness<br><br>
+Mijn interesse in sport is zeer breed en ik ken het eiland. Laat mij weten welke sportieve activiteit u wilt ondernemen zodat ik deze voor u kan (laten) verzorgen
+</div>
+</div>
+
+
+
+
+<div id="footer"></div>
+</body>
+</html>
+
+
+
+

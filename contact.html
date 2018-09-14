@@ -1,28 +1,115 @@
 <!DOCTYPE HTML>
 <html>
-
 <head>
+	<title>Massage and Bodyfit Bonaire</title>
 
-	<link rel="stylesheet" type="text/css" href="styleContact.css">
-	
+
+	<link 	rel= "icon" 
+			type="image/png" 
+			href="favicon-logo.png">
+
+	<link rel="stylesheet" type="text/css" href="menu-small.css">
+	<link rel="stylesheet" type="text/css" href="contact-small.css">
+
+	<script type="text/javascript" src="script.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
 </head>
 
 
 
+
 <body>
-	<div id = "content" style="background-color: purple; width:100%; height: 4400px;">
-		
+	
+<!-- Header of Page -->
+<div id="header">
+	<div id="box-header-logo">
+		<img id="header-logo" src="images/MASSAGE  BODYFIT/400dpiLogo.png">
 	</div>
 
-		<div style="background-color: purple; width:100%; height: 4400px;">
-		
+	<div href="#" id="menu-outer" onclick="collapseMenu()">
+		<div id="menu-text">Menu</div>
+		<div id="menu-bars">
+			<div class="menu-bar"></div>
+			<div class="menu-bar"></div>
+			<div class="menu-bar"></div>
+		</div>
+	</div>
+</div>
+
+<!-- Dropdown Menu Items -->
+<div id="menu-items" style="display: none;">
+	<div class="menu-item" id="menu-home" onclick="menuHome()">Home</div>
+	<div class="menu-item" id="menu-massage" onclick="collapseMenuMassage()">Massage</div>
+
+<!-- Massage Specification -->
+	<div id="menu-massage-specify" style="display: none;">
+			<div id = "box-sport-massage">
+				<div class="circle-massage-specify"></div>
+				<div class="item-massage-specify" id="sport-massage" onclick="menuSportMassage()">Sport Massage</div>
+			</div>
+
+			<div class="new-line-massage-specify"></div>
+
+			<div id = "box-relaxing-massage">
+				<div class="circle-massage-specify"></div>
+				<div class="item-massage-specify" id="relaxing-massage" onclick="menuRelaxingMassage()">Relaxing Massage</div>
+			</div>
+	</div>
+	
+	<div class="menu-item" id="menu-bodyfit" onclick="menuBodyfit()">Bodyfit</div>
+	<div class="menu-item" id="menu-contact" onclick="menuContact()">Contact</div>
+</div>
+
+
+
+
+
+
+<!-- Page Content -->
+
+<!-- Text -->
+<div id="box-contact-header" class="font">
+	<div id="title-contact-header">NO STRESS JUST RELAX MASSAGES</div>
+	<div id="text-contact-header">Een ontspannende massage is een goede manier om de vakantie in te luiden of af te sluiten en zo het vakantie gevoel wat langer vast te houden</div>
+</div>
+
+
+<div class="text-line"></div>
+
+
+<div id="box-contact-info">
+	<div id="box-phone-info">
+		<div class="font" id="text-phone-info">+599 777 0208</div>
+		<div id="container-whatsapp">
+			<a href="whatsapp://send?abid=+5997770208&text=I'd like to chat with you">
+				<img id="image-whatsapp" src="images/whatsapp.png">
+			</a>
+		</div>
+		<div id="container-call">
+			<a href="tel:+599 777 0208">
+				<img id="image-call" src="images/call.png">
+			</a>
+		</div>
 	</div>
 
-		<div style="background-color: purple; width:100%; height: 4400px;">
-		
+	<div id="box-email-info">
+		<div id="container-email">
+			<a href="mailto:info@massagebodyfit.com?Subject=Request For More Information" target="_top">
+				<img id="image-email" src="images/email.png">
+			</a>
+		</div>
+		<div class="font" id="text-email-info">info@massagebodyfit.com</div>
 	</div>
+</div>
+
+
+<div class="text-line"></div>
+
+
+
+<div id="footer"></div>
 
 </body>
-
-
 </html>

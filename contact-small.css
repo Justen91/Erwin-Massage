@@ -92,13 +92,13 @@
 }
 
 #header-contact-price{
-	font-size: 4vw;
+	font-size: 3.8vw;
 	text-align: center;
 	margin-bottom: 2vh;
 }
 
 .price-type{
-	font-size: 3vw;
+	font-size: 3.3vw;
     display: inline-block;
     text-align: left;
     margin-left: 33vw;
@@ -106,7 +106,7 @@
 }
 
 .price-price{
-    font-size: 3vw;
+    font-size: 3.3vw;
     display: inline-block;
     text-align: left;
     float: right;
@@ -118,11 +118,11 @@
 }
 
 #header-contact-text{
-	font-size: 4vw;
+	font-size: 3.8vw;
 	margin-bottom: 2vh;
 }
 
 #text-contact-text{
-	font-size: 3vw;
+	font-size: 3.3vw;
 	margin: 0 15vw;
 }

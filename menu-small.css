@@ -15,11 +15,11 @@ body{
     max-height: 10vh;
     overflow: hidden;
     display: inline-block;
+    margin: 1vh 0 0 5vw;
 }
 
 #header-logo{
-	width: 20vw;
-	margin: 2vh 0 2vh 5vw;
+	width: 23vw;
 }
 
 
@@ -31,11 +31,11 @@ body{
     height: 5.5vh;
     background-color: #174577;
     position: relative;
-    margin-left: 50vw;
+    margin-left: 47vw;
     margin-top: 2vh;
     margin-bottom: 2vh;
     display: inline-block;
-    border-radius: 5px;
+    border-radius: 7px;
     cursor: pointer;
 }
 

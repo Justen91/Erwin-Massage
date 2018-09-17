@@ -11,10 +11,10 @@ body{
 
 
 #sportmassage-image{        
-    width: 150vw;
-    min-width: 457px;
+    width: 120vw;
+    min-width: 430px;
     position: relative;
-    right: 20vw;
+    right: 10vw;
     z-index: -1;
 }
 

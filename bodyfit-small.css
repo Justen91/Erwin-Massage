@@ -17,6 +17,7 @@ body{
     right: 15vw;
     bottom: 10vh;
     z-index: -1;
+    content:url("images/erwin-fotos/run  zoutmeer.jpg")
 }
 
 #fadeout-bodyfit-image {

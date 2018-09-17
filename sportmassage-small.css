@@ -16,6 +16,7 @@ body{
     position: relative;
     right: 10vw;
     z-index: -1;
+    content:url("images/erwin-fotos/hoofdkussen 2-small.jpg");
 }
 
 #fadeout-sportmassage-image {

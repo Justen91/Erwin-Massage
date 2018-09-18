@@ -32,6 +32,19 @@ else{
 
 
 
+// Collapse Menu Items when clicked on page
+function collapseMenuPage(){
+	var menuItems = document.getElementById( 'menu-items' );
+	if(menuItems.style.display == "block"){
+		$( '#menu-items' ).slideUp()	
+};
+};
+
+
+
+
+
+
 function menuHome() {
 	 window.location = 'index.html'
 }

@@ -47,8 +47,8 @@ body{
     line-height: 5.5vh;
     vertical-align: middle;
     width: 70%;
-    font-size: 4.5vw;
-    color: #feb823;
+    font-size: 3.5vw;
+    color: #ffffff;
     display: inline-block;
     float: left;
 }
@@ -64,7 +64,7 @@ body{
 .menu-bar{
     margin-bottom: 0.5vh;
     width: 100%;
-    border-bottom: solid #feb823 0.3vh;
+    border-bottom: solid #ffffffe3 0.3vh;
 }
 
 

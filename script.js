@@ -1,3 +1,8 @@
+var userLanguage = "?language=";
+
+
+
+
 // Collapse Menu Items
 function collapseMenu(){
 	if(document.getElementById( 'menu-items').style.display == "none"){
@@ -46,22 +51,22 @@ function collapseMenuPage(){
 
 
 function menuHome() {
-	 window.location = 'index.html'
+	 window.location = 'index.html' + userLanguage;
 }
 
 
 function menuSportMassage() {
-	window.location = 'sportmassage.html'
+	window.location = 'sportmassage.html' + userLanguage;
 }
 
 function menuRelaxingMassage() {
-	window.location = 'relaxingmassage.html'
+	window.location = 'relaxingmassage.html' + userLanguage;
 }
 
 function menuBodyfit() {
-	window.location = 'bodyfit.html'
+	window.location = 'bodyfit.html' + userLanguage;
 }
 
 function menuContact() {
-	window.location = 'contact.html'
+	window.location = 'contact.html' + userLanguage;
 }

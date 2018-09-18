@@ -106,7 +106,7 @@ body{
 	font-size: 3.5vw;
     display: inline-block;
     text-align: left;
-    margin-left: 33vw;
+    margin-left: 30vw;
     float: left;
 }
 
@@ -115,7 +115,7 @@ body{
     display: inline-block;
     text-align: left;
     float: right;
-    margin-right: 33vw;
+    margin-right: 30vw;
 }
 
 #container-contact-text{

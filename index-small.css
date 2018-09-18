@@ -4,17 +4,6 @@
 	overflow: hidden;
 }
 
-#index-image-text{        
-	position: absolute;
-    z-index: 0;
-    top: 17vh;
-    left: 10vw;
-    font-size: 2.5vw;
-    font-family: Chalkduster;
-    color: #e9e9e94a;
-    cursor: default;
-}
-
 
 #index-image{    
 	width: 230vw;

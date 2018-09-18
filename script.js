@@ -1,4 +1,4 @@
-var userLanguage = "?language=";
+var userLanguage = "";
 
 
 
@@ -70,3 +70,71 @@ function menuBodyfit() {
 function menuContact() {
 	window.location = 'contact.html' + userLanguage;
 }
+
+
+
+
+
+/* Converting to original URL */
+function revertUrl(){
+	var url = window.location.toString();
+	url = url.replace(/\?/g," ");
+	url = url.substring(0, url.indexOf(" "));
+	return url;
+}
+
+
+
+/* Changing Language Onclick Flag */
+function languageEnglish(){
+	userLanguage = "?language=en"
+	var url = revertUrl();
+	window.location = url + userLanguage;
+	translateEnglish();
+}
+
+
+function languageDutch(){
+	userLanguage = "?language=nl"
+	var url = revertUrl();
+	window.location = url + userLanguage;
+}
+
+
+function languagePapiamentu(){
+	userLanguage = "?language=pa"
+	var url = revertUrl();
+	window.location = url + userLanguage;
+}
+
+
+
+
+
+
+/* Verifying User saved language */
+window.onload = function() {
+	var urlLanguage = window.location.toString();
+
+	if(urlLanguage.includes("?")){
+	urlLanguage = urlLanguage.replace(/\?/g," ");
+	urlLanguage = urlLanguage.substring(urlLanguage.indexOf(" ")+1);
+	userLanguage = "?" + urlLanguage;
+}
+}
+
+
+
+
+
+/* Translation Text English */
+function translateEnglish(){
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('index-text-header').innerText = "Bon bini na Boneiru, or in other words, welcome to Bonaire!"
+}, false);
+	
+};
+
+
+
+

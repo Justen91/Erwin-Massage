@@ -157,6 +157,53 @@ body{
 
 
 
+/* Language Flags */
+.language-flag{    
+    position: absolute;
+    width: 7vw;
+    height: 5vh;
+    margin-left: 90vw;
+}
+
+
+#flag-english{
+    bottom:25vh;
+    cursor: pointer;
+}
+
+#flag-english >img{
+    content:url("images/united-kingdom-vertical.png");
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+#flag-dutch{
+    bottom:17vh;
+    cursor: pointer;
+}
+
+#flag-dutch >img{
+    content:url("images/netherlands-vertical.png");
+    width: 100%;
+    height: 100%;
+}
+
+
+
+#flag-papiamentu{
+    bottom:9vh;
+    cursor: pointer;
+}
+
+#flag-papiamentu >img{
+    content:url("images/bonaire-vertical.png");
+    width: 100%;
+    height: 100%;
+}
+
 
 
 

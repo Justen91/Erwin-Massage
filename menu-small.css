@@ -74,6 +74,7 @@ body{
 /* Menu Items */
 #menu-items{
     padding: 3vh 0 8vh 0;
+    background-color:grey;
     background-image: linear-gradient(#e9e9e9 0%, #e9e9e9 88%, #ffffff00 100%);
     display: none;
     position: absolute;

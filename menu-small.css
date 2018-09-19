@@ -65,7 +65,7 @@ body{
 .menu-bar{
     margin-bottom: 0.5vh;
     width: 100%;
-    border-bottom: solid #ffffffe3 0.3vh;
+    border-bottom: solid #ffffffe3 2.1px;/*0.3vh;*/
 }
 
 
